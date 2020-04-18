@@ -1,0 +1,91 @@
+<!DOCTYPE html><!--아이유 팬으로서 팬 홈페이지를 제작하고 css로 꾸며보았습니다.-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IU FanMade</title>
+    <style>
+        body, html {
+            background-color: #D4D3DD;
+        }
+
+        h1{
+            border: 1px solid #4A569D;
+            border-width: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0px;
+            color: blueviolet;
+        }
+
+        .song {
+            font-size: 20px;
+            color: cornflowerblue;
+        }
+
+        .nav_head{
+            border: 1px solid #4A569D;
+            border-width: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0px;
+            font-size: 20px;
+            font-weight: 200;
+            color: blueviolet;
+        }
+
+        .todaysong{
+            border: 1px solid #4A569D;
+            border-width: 3px;
+        }
+
+        .todaysong_name,
+        .todaysong_head {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 200;
+        }
+
+        .todaysong_head {
+            font-size: 30px;
+            margin: 20px 0px;
+            color: blueviolet;
+        }
+
+        .todaysong_mv {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>IU 아이유</h1>
+    <main>
+        <div class="song">노래 순위</div>
+        <ul class="IU_chart">
+            <li class="IU_chart-list">1위-너랑 나</li>
+            <li class="IU_chart-list">2위-좋은 날</li>
+            <li class="IU_chart-list">3위-사랑이 잘</li>
+        </ul>
+        <div class="todaysong">
+            <div class="todaysong_head">오늘의 노래</div>
+            <div class="todaysong_name">Blueming</div>
+            <div class="todaysong_mv">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/D1PvIWdJ8xo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+        </div>  
+    </main>
+    <nav>
+        <div class="nav_head"> 노래 모음집</div>
+        <ul class="nav_main">
+            <a href="https://www.youtube.com/watch?v=nM0xDI5R50E"><li class="nav_list">삐삐</li></a>
+            <a href="https://www.youtube.com/watch?v=d9IxdwEFk1c"><li class="nav_list">Palette</li></a>
+        </ul>
+    </nav>
+</body>
+</html>
