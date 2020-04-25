@@ -1,4 +1,6 @@
 <!DOCTYPE html><!--아이유 팬으로서 팬 홈페이지를 제작하고 css로 꾸며보았습니다.-->
+<!--5주차에 만들었던 아이유 팬 웹페이지에서 이번주차에 배운것을 추가하여 
+    꾸며보았습니다. cusur,box-shadow,background-image등-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,13 +12,23 @@
         }
 
         h1{
-            border: 1px solid #4A569D;
+            border: 3px ridge #4A569D;
             border-width: 8px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+            rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 20px 0px;
             color: blueviolet;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        li{
+            margin: 10px 0px;
         }
 
         .song {
@@ -27,6 +39,8 @@
         .nav_head{
             border: 1px solid #4A569D;
             border-width: 3px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+            rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -36,13 +50,30 @@
             color: blueviolet;
         }
 
+        .nav_list{
+            background-image: url("IU_background.png");
+            background-size: 100px 200px;
+            background-repeat: no-repeat;
+            color: aqua;
+            width: 100px;
+            height: 200px;
+            margin: 10px 10px;
+        }
+
+        .IU_chart-list:hover {color: aqua;}
+
         .todaysong{
             border: 1px solid #4A569D;
             border-width: 3px;
+            border-radius: 3%;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+            rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+            background-color: skyblue;
         }
 
         .todaysong_name,
-        .todaysong_head {
+        .todaysong_head,
+        .todaysong_line {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -50,8 +81,9 @@
         }
 
         .todaysong_head {
+            border-bottom: 1px solid rgb(67, 67, 228);
             font-size: 30px;
-            margin: 20px 0px;
+            margin: 20px 300px;
             color: blueviolet;
         }
 
@@ -59,6 +91,13 @@
             display: flex;
             justify-content: center;
             margin: 20px 0px;
+        }
+
+        .todaysong_line{
+            border: 1px dashed rgb(67, 67, 228);
+            font-size: 20px;
+            margin: 20px 300px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -76,16 +115,16 @@
             <div class="todaysong_name">Blueming</div>
             <div class="todaysong_mv">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/D1PvIWdJ8xo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
             </div>
+            <span class="todaysong_line">가사</span>
         </div>  
     </main>
     <nav>
         <div class="nav_head"> 노래 모음집</div>
-        <ul class="nav_main">
-            <a href="https://www.youtube.com/watch?v=nM0xDI5R50E"><li class="nav_list">삐삐</li></a>
-            <a href="https://www.youtube.com/watch?v=d9IxdwEFk1c"><li class="nav_list">Palette</li></a>
-        </ul>
+        <div class="nav_main">
+            <div class="nav_list">삐삐</div>
+            <div class="nav_list">팔레트</div>
+        </div>
     </nav>
 </body>
 </html>
