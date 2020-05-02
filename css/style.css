@@ -1,0 +1,114 @@
+body, html {
+    background-color: #D4D3DD;
+}
+
+h1{
+    border: 3px ridge #4A569D;
+    border-width: 8px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    color: blueviolet;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    margin: 10px 0px;
+}
+
+.song {
+    font-size: 20px;
+    color: cornflowerblue;
+}
+
+.mv_head{
+    border: 1px solid #4A569D;
+    border-width: 3px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    font-size: 20px;
+    font-weight: 200;
+    color: blueviolet;
+}
+
+.mv_list{
+    background-image: url("IU_background.png");
+    background-size: 100px 200px;
+    background-repeat: no-repeat;
+    color: aqua;
+    margin: 10px 10px;
+}
+
+.IU_chart-list:hover {color: aqua;}
+
+.todaysong{
+    border: 1px solid #4A569D;
+    border-width: 3px;
+    border-radius: 3%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+    background-color: skyblue;
+}
+
+.todaysong_name,
+.todaysong_head,
+.todaysong_line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 200;
+}
+
+.todaysong_head {
+    border-bottom: 1px solid rgb(67, 67, 228);
+    font-size: 30px;
+    margin: 20px 300px;
+    color: blueviolet;
+}
+
+.todaysong_mv {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.todaysong_line{
+    border: 1px dashed rgb(67, 67, 228);
+    font-size: 20px;
+    margin: 20px 300px;
+    cursor: pointer;
+}
+
+.point{
+    color: deeppink;
+}
+
+.plan{
+    border: 1px solid #4A569D;
+    color: dodgerblue;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.plan_list{
+    color: blueviolet;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+
+.picture{
+    width: 200px;
+    height: 400px;
+    cursor: pointer;
+}
